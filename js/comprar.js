@@ -27,7 +27,7 @@ function validarFormulario(e) {
     icon: "success",
     button: "Aceptar",
   }).then(function () {
-    window.location.href = "//doñamarta.com";
+    window.location.href = "https://pulpoi.github.io/dona-marta/";
     limpiarLs();
   });
 }
