@@ -170,21 +170,21 @@ function tomarDatos() {
   let titulo = 'title'
   let cantidad = 'cantidad'
   let precio = 'precio'
-  
+
   for (let index in storage) {
-    const dato = storage[index]  
+    const dato = storage[index]
     if (data.indexOf(dato[titulo]) === -1) {
       data.push(dato[titulo])
       data.push(dato[cantidad])
       data.push(dato[precio])
       data[dato[titulo]] = {}
       data[dato[titulo]][cantidad] = 0
-      data[dato[titulo]] [precio] = ''
+      data[dato[titulo]][precio] = ''
     }
-    data[dato[titulo]][cantidad] += dato[cantidad] 
-    data[dato[titulo]][precio] += dato[precio] 
+    data[dato[titulo]][cantidad] += dato[cantidad]
+    data[dato[titulo]][precio] += dato[precio]
   }
-  
+
 }
 
 // Limpiar Local Storage
@@ -192,4 +192,3 @@ function limpiarLs() {
   addLocalStorage(carrito);
   localStorage.clear()
 }
-

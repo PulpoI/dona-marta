@@ -50,9 +50,10 @@ header, .alert{
   display: none;
 }
 
-.ItemCarrito {
+.itemCarrito {
   border-bottom:  2px solid white;
 }
 
-/*---------------*/
+.category_list {
 
+}

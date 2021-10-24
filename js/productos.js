@@ -49,4 +49,3 @@ for (const item of items) {
     `;
   itemId.append(contenedor);
 }
-

@@ -32,8 +32,6 @@ function validarFormulario(e) {
   });
 }
 
-
-
 // Funcion para detallar la compra
 function detallarCarrito() {
   detalleCarrito.innerHTML = "";
