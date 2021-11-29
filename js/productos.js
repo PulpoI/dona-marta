@@ -18,9 +18,10 @@ const p3 = new Producto("Mini Cake gold", "Torta", 1400, 3);
 const p4 = new Producto("Oreos bañadas", "Box", 800, 4);
 const p5 = new Producto("Tarta de banana", "Tarta", 1200, 5);
 const p6 = new Producto("Budín Hamburgués", "Torta", 1400, 6);
-
+const p7 = new Producto("Cajita dulce", "Box", 900, 7);
+const p8 = new Producto("Tarta de Frutilla", "Tarta", 1200, 8);
 //Productos pusheados al array
-items.push(p1, p2, p3, p4, p5, p6);
+items.push(p1, p2, p3, p4, p5, p6, p7, p8);
 
 // Filtrar productos por categoria
 const btnTorta = document.querySelector("#cat-tortas");
