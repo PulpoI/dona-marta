@@ -9,9 +9,35 @@ header,
 .alert {
   z-index: 100;
 }
+
+.navbar{
+  padding: 0!important;
+}
+
+.navbar-brand img{
+  width:150px;
+  padding-left: 30px;
+}
+.logo{
+  width: 560px;
+}
+
 .description {
   height: 25px;
   overflow: hidden;
+}
+
+.buscador-ideas {
+height: 73vh;
+
+}
+
+.category_list{
+  flex-wrap: wrap;
+}
+
+.category_item {
+  margin-bottom: 0.5rem;
 }
 
 .img-about {

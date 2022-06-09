@@ -13,28 +13,38 @@
 
 <body>
   <!-- Header -->
-  <header class="container-fluid bg-white position-sticky top-0">
-    <ul class="nav nav-pills mb-3 py-3 container justify-content-center gap-4" id="pills-tab" role="tablist">
-      <li class="nav-item text-primary" role="presentation">
-        <!--INICIO-->
-        <a class="nav-link active" id="pills-inicio-tab" data-bs-toggle="pill" data-bs-target="#pills-inicio" type="button"
-          role="tab" aria-controls="pills-inicio" aria-selected="true">Inicio</a>
-      </li>
-      <li class="nav-item text-primary" role="presentation">
-        <a class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
-          role="tab" aria-controls="pills-home" aria-selected="true">Ideas</a>
-      </li>
-      <li id="productos" class="nav-item" role="presentation">
-        <a class="nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-          type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Productos</a>
-      </li>
-      <li class="nav-item contador-carrito" role="presentation">
-        <a class="nav-link " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button"
-          role="tab" aria-controls="pills-contact" aria-selected="false"><img class="carrito-img" src="img/carrito.png"
-            alt=""><span class="badge bg-secondary"></span></a>
-      </li>
-    </ul>
-  </header>
+  <nav class="navbar navbar-expand-lg  navbar-light bg-white position-sticky top-0">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo-header.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+        <ul class="nav navbar-nav nav-pills py-3 container justify-content-center gap-4" id="pills-tab" role="tablist">
+          <li class="nav-item text-primary" role="presentation">
+            <!--INICIO-->
+            <a class="nav-link active" id="pills-inicio-tab" data-bs-toggle="pill" data-bs-target="#pills-inicio" type="button"
+              role="tab" aria-controls="pills-inicio" aria-selected="true">Inicio</a>
+          </li>
+          <li class="nav-item text-primary" role="presentation">
+            <a class="nav-link " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button"
+              role="tab" aria-controls="pills-home" aria-selected="true">Ideas</a>
+          </li>
+          <li id="productos" class="nav-item" role="presentation">
+            <a class="nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+              type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Productos</a>
+          </li>
+          <li class="nav-item contador-carrito" role="presentation">
+            <a class="nav-link " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button"
+              role="tab" aria-controls="pills-contact" aria-selected="false"><img class="carrito-img" src="img/carrito.png"
+                alt=""><span class="badge bg-secondary"></span></a>
+          </li>
+        </ul>
+      </div>
+  </nav>
   <!-- Alertas de producto Agregado/Removido -->
   <div class="alert mt--5 position-fixed start-70 alert-primary hide" role="alert">
     Producto añadido al carrito!
@@ -45,7 +55,7 @@
   <!-- Contenido -->
   <div class="tab-content" id="pills-tabContent">
     <!--INICIO-->
-    <div class="container tab-pane fade show active " id="pills-inicio" role="tabpanel" aria-labelledby="pills-inicio-tab">
+    <div class="container tab-pane fade show active mt-3" id="pills-inicio" role="tabpanel" aria-labelledby="pills-inicio-tab">
       <div class="row row-cols-md-2 justify-content-center">
         <img class="logo" src="img/logo.png" alt="">
       </div>
@@ -61,9 +71,9 @@
       </div>
     </div>
     <!--IDEAS-->
-    <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    <div class="tab-pane buscador-ideas fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 
-      <div class="container">
+      <div class="container mt-3">
         <div id="arriba">
           <p class="lead text-center">Buscador de ideas</p>
           <form>
